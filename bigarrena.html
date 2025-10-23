@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <title>Bigarren Orria</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: #003366; }
+        nav a { margin-right: 10px; font-weight: bold; text-decoration: none; color: #0056b3; }
+        .txikia {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .handia {
+            width: 400px;
+        }
+    </style>
+    HTML
+    <body style="background-color: aqua;"
+</head>
+<body>
+    <h1>Bigarren Orria</h1>
+    <nav>
+        <a href="sarrera.html">Sarrera</a>
+        <a href="lehena.html">Lehena</a>
+        <a href="hirugarrena.html">Hirugarrena</a>
+    </nav>
+
+    <h2>Tour de frantzia podiuma 2025</h2>
+    <img src="./tour.jpeg" alt="Irudi txikia" onclick="handitu(this)" class="txikia">
+
+    <script>
+        function handitu(irudia) {
+            if (irudia.classList.contains("txikia")) {
+                irudia.classList.remove("txikia");
+                irudia.classList.add("handia");
+            } else {
+                irudia.classList.remove("handia");
+                irudia.classList.add("txikia");
+            }
+        }
+    </script>
+
+    <h2>Tour 2025 Laburpena</h2>
+    <video controls width="320">
+        <source src="./tourra.mp4" type="video/mp4">
+        Zure nabigatzaileak ez du bideoa erakusten.
+    </video>
+
+    <h2>Frantziako tourreko introa</h2>
+    <audio controls>
+        <source src="./musika.mp3" type="audio/mpeg">
+        Zure nabigatzaileak ez du audioa erakusten.
+    </audio>
+</body>
+</html>
+

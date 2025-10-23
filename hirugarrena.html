@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <title>Hirugarren Orria</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: #003366; }
+        nav a { margin-right: 10px; font-weight: bold; text-decoration: none; color: #ff00e1; }
+        /* Testua ezkerretik eskuinera mugitzen */
+        .mugimendua {
+            position: relative;
+            animation: mugituEzkerEskuin 5s infinite linear;
+        }
+
+        @keyframes mugituEzkerEskuin {
+            from { left: 0; }
+            to { left: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hirugarren Orria</h1>
+    <nav>
+        <a href="sarrera.html">Sarrera</a>
+        <a href="lehena.html">Lehena</a>
+        <a href="bigarrena.html">Bigarrena</a>
+    </nav>
+   <h2>Tour de frantzia podiuma 2025</h2>
+    <img src="./tour.jpeg" alt="Irudi txikia" onclick="handitu(this)" class="txikia">
+
+    <script>
+        function handitu(irudia) {
+            if (irudia.classList.contains("txikia")) {
+                irudia.classList.remove("txikia");
+                irudia.classList.add("handia");
+            } else {
+                irudia.classList.remove("handia");
+                irudia.classList.add("txikia");
+            }
+        }
+    </script>
+    <h2>Mugitzen</h2>
+        <p class="mugimendua">Eskerrik asko! / Lier Torres Sanchez</p>
+</iframe>
+</body>
+</html>
+
